@@ -1,6 +1,5 @@
 const formatString = function (string) {
     let text = string;
-    const stringEnding = '...';
   
     if (text.length > 40){
         text = `${text.slice(0, 40)}...`;
@@ -10,6 +9,7 @@ const formatString = function (string) {
     
       return text;
     };
+
   /*
    * Вызовы функции для проверки работоспособности твоей реализации.
    */
