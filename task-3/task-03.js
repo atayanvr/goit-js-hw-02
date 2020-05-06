@@ -1,14 +1,17 @@
+'use strict'
+
 const findLongestWord = function (string) {
-  const arr = string.split("");
+  const arr = string.split('');
   let longWord = arr[0];
   for (let i = 1; i < arr.length; i += 1) {
     if (arr[i].length > longWord.length) {
       longWord = arr[i];
     }
   }
-
-  return longWord;
+  const result = `Самое длинное слово - "${string}" - это ${longWord}`;
+  return result;
 };
+
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
